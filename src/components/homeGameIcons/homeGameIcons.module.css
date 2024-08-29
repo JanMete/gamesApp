@@ -1,0 +1,8 @@
+.iconsMainContainer {
+  display: flex;
+  gap: 0.6rem;
+}
+.iconContainer {
+  width: 12px;
+  height: 13px;
+}

@@ -1,0 +1,29 @@
+.appName {
+  padding: 1rem;
+}
+.appHeader {
+  display: flex;
+  align-items: center;
+}
+.headerInputContainer {
+  flex-grow: 2;
+}
+.headerInput {
+  background-color: var(--lighterBlackColor);
+  border: none;
+  border-radius: var(--roundedCorners);
+  padding: 1rem 1rem;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+.headerInput:hover {
+  background-color: var(--whiteColor);
+}
+.headerInput::placeholder {
+  color: var(--darkerWhiteColor);
+  font-weight: bold;
+}
+.headerInput:focus {
+  outline: none;
+  background-color: var(--whiteColor);
+}

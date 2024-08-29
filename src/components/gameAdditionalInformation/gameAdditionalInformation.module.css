@@ -1,0 +1,41 @@
+.additionalInformation {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--lighterBlackColor);
+  padding: 1rem;
+  z-index: 10;
+  border-radius: 0 0 1rem 1rem;
+}
+.showAdditionalInformation {
+  display: block;
+}
+.gameDetailContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  padding: 0.4rem;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+.gameDetailDescription {
+  color: var(--descriptionDarkerWhiteColor);
+}
+.gameDetailHr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--descriptionDarkerWhiteColor);
+  margin: auto;
+  padding: 0;
+}
+.genresContainer {
+  display: flex;
+}
+.gameUtilityButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

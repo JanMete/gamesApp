@@ -1,0 +1,47 @@
+.gameMainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem;
+  width: 100%;
+}
+.gamesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.gameImage {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+.gameDescriptionMainContainer {
+  padding: 1rem;
+}
+.gameContainer {
+  background-color: var(--lighterBlackColor);
+  border-radius: 1rem;
+  position: relative;
+}
+.gameContainer:hover {
+  border-radius: 1rem 1rem 0 0;
+}
+.buttonContainer {
+  display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+  .gameMainContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1058px) {
+  .gameMainContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 862px) {
+  .gameMainContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

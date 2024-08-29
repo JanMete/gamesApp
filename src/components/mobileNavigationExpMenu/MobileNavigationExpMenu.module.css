@@ -1,0 +1,26 @@
+.mainContainer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  padding: 1rem;
+  border-radius: var(--roundedCorners);
+  z-index: 100;
+}
+.mainContainer ul {
+  list-style-type: none;
+}
+.mainContainer a {
+  color: var(--blackColor);
+}
+.menuFirstSectionAndIcons {
+  display: flex;
+  gap: 3rem;
+}
+.mainContainer li {
+  padding: 6px 0 6px 0;
+}
+/* .mainContainer ul ul li {
+  padding: 6px 0 0 0;
+} */

@@ -1,0 +1,14 @@
+.gameUtilityButton {
+  background-color: var(--headerButtonDarkColor);
+  border: none;
+  color: var(--whiteColor);
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+}
+.gameUtilityButton:hover {
+  color: var(--yellowColor);
+}
