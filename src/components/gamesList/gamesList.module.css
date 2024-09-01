@@ -5,31 +5,11 @@
   margin: 2rem;
   width: 100%;
 }
-.gamesColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.gameImage {
+.loadingErrorMainContainer {
   width: 100%;
-  height: auto;
-  border-radius: 1rem 1rem 0 0;
-}
-.gameDescriptionMainContainer {
-  padding: 1rem;
-}
-.gameContainer {
-  background-color: var(--lighterBlackColor);
-  border-radius: 1rem;
-  position: relative;
-}
-.gameContainer:hover {
-  border-radius: 1rem 1rem 0 0;
-}
-.buttonContainer {
   display: flex;
+  justify-content: center;
 }
-
 @media screen and (max-width: 1300px) {
   .gameMainContainer {
     grid-template-columns: repeat(3, 1fr);

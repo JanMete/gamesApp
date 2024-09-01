@@ -1,4 +1,5 @@
 import { GameDetail } from '../../types/gameType';
+import GameGenres from '../gameGenres/GameGenres';
 import GameUtilityButton from '../gameUtilityButton/GameUtilityButton';
 import style from './gameAdditionalInformation.module.css';
 
@@ -11,18 +12,6 @@ export default function GameAdditionalInformation({
   game,
   isHovered,
 }: GameAdditionalInformationProps) {
-  const renderGenres = (game: GameDetail) => {
-    return game.genres.map((genre, index) => {
-      const isLastGenre = index === game.genres.length - 1;
-      return (
-        <p key={index}>
-          {genre.name}
-          {!isLastGenre && ','}
-        </p>
-      );
-    });
-  };
-
   return (
     <div
       className={`${style.additionalInformation} ${
@@ -36,7 +25,9 @@ export default function GameAdditionalInformation({
       <hr className={style.gameDetailHr} />
       <div className={style.gameDetailContainer}>
         <p className={style.gameDetailDescription}>genres:</p>
-        <div className={style.genresContainer}>{renderGenres(game)}</div>
+        <div className={style.genresContainer}>
+          <GameGenres game={game} />
+        </div>
       </div>
       <div className={style.gameUtilityButtonsContainer}>
         <GameUtilityButton>Show more like this</GameUtilityButton>

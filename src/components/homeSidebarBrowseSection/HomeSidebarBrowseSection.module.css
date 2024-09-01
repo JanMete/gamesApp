@@ -1,0 +1,28 @@
+.sidebarListItemLink {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.sidebarListItemLink:hover {
+  color: var(--darkerWhiteColor);
+}
+.subList {
+  list-style: none;
+}
+.sidebarSubLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sidebarSubLinkIconContainer {
+  background-color: var(--lighterBlackColor);
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.sidebarSubLink:hover .sidebarSubLinkIconContainer {
+  background-color: var(--darkerWhiteColor);
+}
+.sidebarSubLink:hover .sidebarSubLinkIcon {
+  color: var(--lighterBlackColor);
+}

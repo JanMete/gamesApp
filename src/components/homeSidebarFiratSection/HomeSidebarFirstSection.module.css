@@ -1,0 +1,8 @@
+.sidebarListItemLink {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.sidebarListItemLink:hover {
+  color: var(--darkerWhiteColor);
+}

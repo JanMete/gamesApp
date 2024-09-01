@@ -1,0 +1,24 @@
+.gamesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.gameImage {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+.gameDescriptionMainContainer {
+  padding: 1rem;
+}
+.gameContainer {
+  background-color: var(--lighterBlackColor);
+  border-radius: 1rem;
+  position: relative;
+}
+.gameContainer:hover {
+  border-radius: 1rem 1rem 0 0;
+}
+.buttonContainer {
+  display: flex;
+}

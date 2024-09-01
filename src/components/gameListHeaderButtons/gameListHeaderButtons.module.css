@@ -1,0 +1,44 @@
+.headerButtonsContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+.headerButton {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: var(--headerButtonDarkColor);
+  color: var(--whiteColor);
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.headerButton:hover {
+  background-color: var(--whiteColor);
+}
+.headerButtonP {
+  color: var(--whiteColor);
+}
+.headerButton:hover .headerButtonP {
+  color: var(--lighterBlackColor);
+}
+.headerButton:hover .headerButtonIcon {
+  color: var(--lighterBlackColor);
+}
+
+.headerButtonIconWithoutText {
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+.headerButton:hover {
+  color: var(--lighterBlackColor);
+}
+.headerAdditionalButtonsContainer {
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.showHeaderAdditionalButtonsContainer {
+  opacity: 1;
+}
